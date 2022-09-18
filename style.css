@@ -37,15 +37,17 @@ body > div {
   background-repeat: no-repeat;
   background-size: 200% 100%;
   background-position: 100% 50%;
-  transition: background-position 1s ease-in-out;
+  transition: background-position 1s ease-in-out, -webkit-text-stroke 1s linear;
   cursor: default;
   /* border: 1px solid white;
   border-left: none;
   border-right: none; */
+  text-align: center;
 }
 
 body > div:hover {
   background-position: 0;
+  -webkit-text-stroke: 0.3px rgba(255, 255, 255, 0);
 }
 
 body > div:hover > .bar {
